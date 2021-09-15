@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<style type="text/css">
+		/********************************
+		* CUSTOM STYLING - SYSTEM EMAIL *
+		********************************/
+		body {
+			background: #d9e0e7;
+		}
+		a:hover,
+		a:focus {
+			text-decoration: underline;
+		}
+		.brand,
+		.brand:visited {
+			font-size: 18px;
+			color: #212121 !important;
+			font-weight: 300;
+			line-height: 20px;
+			display: block;
+			text-decoration: none !important;
+		}
+
+		/* Typography */
+
+		body, table.body, p, td {
+			font-size: 12px;
+		}
+		h1, h2, h3, h4 {
+			margin: 5px 0 10px;
+		}
+		h5, h6 {
+			margin: 5px 0;
+		}
+
+		h1 { font-size: 36px; }
+		h2 { font-size: 30px; }
+		h3 { font-size: 24px; }
+		h4 { font-size: 18px; }
+		h5 { font-size: 14px; }
+		h6 { font-size: 12px; }
+
+		/* Predefined Class */
+
+		h1.last,
+		h2.last,
+		h3.last,
+		h4.last,
+		h5.last,
+		h6.last,
+		p.last {
+			margin-bottom: 0;
+		}
+		td.last {
+			padding-bottom: 0 !important;
+		}
+		td.wrapper {
+			padding: 15px 15px 0 15px;
+		}
+		table.columns td, table.column td {
+			padding: 0 0 15px 0;
+		}
+		.header,
+		.footer {
+			background: #ffffff;
+		}
+		.content.dark-theme {
+			background: #2d353c;
+		}
+		.content.dark-theme .panel {
+			background: #1b2024;
+			border: none;
+		}
+		.content.dark-theme h1,
+		.content.dark-theme h2,
+		.content.dark-theme h3,
+		.content.dark-theme h4,
+		.content.dark-theme h5,
+		.content.dark-theme h6,
+		.content.dark-theme .highlight {
+			color: #fff !important;
+		}
+		.content.dark-theme a, a {
+			color: #2196F3;
+		}
+		.content.dark-theme p,
+		.content.dark-theme td {
+			color: #a8acb1 !important;
+		}
+		.divider {
+			height: 1px;
+			width: 100%;
+			background: #444c54;
+			margin-top: 5px;
+		}
+		.text-right {
+			text-align: right;
+		}
+		.valign-middle {
+			vertical-align: middle;
+		}
+		.m-t-0 { margin-top: 0px !important; }
+		.m-t-5 { margin-top: 5px !important; }
+		.m-t-10 { margin-top: 10px !important; }
+		.m-t-15 { margin-top: 15px !important; }
+		.m-b-0 { margin-bottom: 0px !important; }
+		.m-b-5 { margin-bottom: 5px !important; }
+		.m-b-10 { margin-bottom: 10px !important; }
+		.m-b-15 { margin-bottom: 15px !important; }
+		.p-t-0 { padding-top: 0px !important; }
+		.p-t-5 { padding-top: 5px !important; }
+		.p-t-10 { padding-top: 10px !important; }
+		.p-t-15 { padding-top: 15px !important; }
+
+		/* Button */
+		.btn a,
+		.button a {
+			color: #fff !important;
+			font-weight: normal !important;
+			text-decoration: none !important;
+		}
+		table.btn td,
+		table.button td {
+			vertical-align: middle !important;
+			padding: 6px 18px !important;
+			background: #009688 !important;
+			border-color: #009688 !important;
+			-webkit-border-radius: 6px !important;
+			-moz-border-radius: 6px !important;
+			border-radius: 6px !important;
+		}
+		table.btn:hover td,
+		table.button:hover td,
+		table.btn:visited td,
+		table.button:visited td,
+		table.btn:active td,
+		table.button:active td {
+			background: #00796B !important;
+			border-color: #00796B !important;
+		}
+
+		/* Button Orange */
+
+		table.btn.orange td,
+		table.button.orange td {
+			background: #FF9800 !important;
+			border-color: #FF9800 !important;
+		}
+		table.btn.orange:hover td,
+		table.button.orange:hover td,
+		table.btn.orange:visited td,
+		table.button.orange:visited td,
+		table.btn.orange:active td,
+		table.button.orange:active td {
+			background: #F57C00 !important;
+			border-color: #F57C00 !important;
+		}
+
+		/* Button Blue */
+
+		table.btn.blue td,
+		table.button.blue td {
+			background: #2196F3 !important;
+			border-color: #2196F3 !important;
+		}
+		table.btn.blue:hover td,
+		table.button.blue:hover td,
+		table.btn.blue:visited td,
+		table.button.blue:visited td,
+		table.btn.blue:active td,
+		table.button.blue:active td {
+			background: #1976D2 !important;
+			border-color: #1976D2 !important;
+		}
+
+		/* Button Red */
+
+		table.btn.red td,
+		table.button.red td {
+			background: #F44336 !important;
+			border-color: #F44336 !important;
+		}
+		table.btn.red:hover td,
+		table.button.red:hover td,
+		table.btn.red:visited td,
+		table.button.red:visited td,
+		table.btn.red:active td,
+		table.button.red:active td {
+			background: #D32F2F !important;
+			border-color: #D32F2F !important;
+		}
+
+		/* Button White */
+
+		table.btn.white td a,
+		table.button.white td a {
+			color: #333 !important;
+		}
+		table.btn.white td,
+		table.button.white td {
+			background: #ffffff !important;
+			border-color: #ffffff !important;
+		}
+		table.btn.white:hover td,
+		table.button.white:hover td,
+		table.btn.white:visited td,
+		table.button.white:visited td,
+		table.btn.white:active td,
+		table.button.white:active td {
+			background: #eee !important;
+			border-color: #eee !important;
+		}
+
+		/* Button Grey */
+
+		table.btn.grey td,
+		table.button.grey td {
+			background: #9E9E9E !important;
+			border-color: #9E9E9E !important;
+		}
+		table.btn.grey:hover td,
+		table.button.grey:hover td,
+		table.btn.grey:visited td,
+		table.button.grey:visited td,
+		table.btn.grey:active td,
+		table.button.grey:active td {
+			background: #616161 !important;
+			border-color: #616161 !important;
+		}
+
+		.wrapper + .wrapper {
+			padding-left: 0 !important;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.body .container.content {
+				width: 100% !important;
+			}
+			.wrapper + .wrapper {
+				padding-left: 15px !important;
+			}
+			table[class="body"] .row.header {
+				display: table !important;
+			}
+			table[class="body"] .wrapper {
+				padding-right: 15px !important;
+			}
+			table[class="body"] .header img {
+				height: 20px !important;
+			}
+			table[class="body"] .header .wrapper {
+				display: table-cell !important;
+				padding-left: 5px !important;
+				padding-right: 5px !important;
+			}
+			table[class="body"] .wrapper .text-right {
+				text-align: right !important;
+			}
+			.text-right {
+				text-align: left !important;
+			}
+		}
+	</style>
+</head>
+<body>
+<!-- begin page body -->
+<h3>Testing email</h3>
+<!-- end page body -->
+</body>
+</html>
