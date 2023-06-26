@@ -1,0 +1,8 @@
+flask
+flask_mail
+dbconnect
+mysql
+mysql.connector
+python-dotenv
+werkzeug
+mysql-connector-python

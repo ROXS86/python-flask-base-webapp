@@ -4,10 +4,12 @@ from mysql.connector import Error
 
 def connection():
     try:
-        connection = mysql.connector.connect(host='localhost',
-                                         database='name-db',
-                                         user='root',
-                                         password='password')
+        connection = mysql.connector.connect(
+            host="localhost",
+            database="web_app_flask",
+            user="root",
+            password="pwd",
+        )
 
         if connection.is_connected():
             db_Info = connection.get_server_info()
@@ -21,4 +23,3 @@ def connection():
         print("Error while connecting to MySQL", e)
 
     return cursor, connection
-
