@@ -15,7 +15,10 @@ python -m pip install --upgrade pip
 
 python -m pip install -r requirements.txt
 
-http://127.0.0.1:5000/auth/register
+#### Run app
+$ flask run
+
+http://127.0.0.1:8000/auth/register
 
 #### DDL
 CREATE TABLE `user` (
